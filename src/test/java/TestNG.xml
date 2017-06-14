@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="Readdle" verbose="1">
+    <test name="Rozetka">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="TestCases">
+                <methods>
+                    <include name="checkFilter"/>
+                    <include name="checkProductsInCatalog"/>
+                    <include name="checkProductPage"/>
+                    <include name="checkBuyProduct"/>
+                    <include name="checkCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
